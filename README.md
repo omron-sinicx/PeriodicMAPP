@@ -25,10 +25,24 @@ cmake -H. -Bbuild && make -j -C build
 
 ## Usage
 
+`test/scripts/optimize.sh` is a script used in experiments, which is an example of usage.
+
 ### Initial Plan Generation
+`generate_path_and_intersection` inputs a cycle $M$ as an argument and a problem instance from standard input.
+It outputs a condition for initial plan.
+
+`generate_general_initial_periodic_plan` inputs a parameterm, which represents a temporal room at intersections and set to $1.0$ in our experiments, as an argument
+and a condition for initial plan from standart input. It outputs an initial plan.
+<pre><code>./generate_path_and_intersection <i>M</i> < problem_instance.txt > condition.txt
+./generate_general_initial_periodic_plan <i>temporal_room</i> < condition.txt > initial_plan.txt
+</code></pre>
 
 ### Optimization
-
+`optimize_periodic_plan_g2o` optimizes initial plan. Its input and output files are specified by config file.
+If there is no argument, it read config from "../config/optimize_periodic_plan_g2o.yaml".
+<pre><code>./optimize_periodic_plan_g2o</code></pre>
+You can also use your configuration file as follows:
+<pre><code>./optimize_periodic_plan_g2o your_config.yaml</code></pre>
 ## Config Parameters
 
 ## File Formats
@@ -49,18 +63,27 @@ Polygons are described as follows:
  *vertex_2_x* *vertex_2_y*\
 &#xFE19;
 
-### Plan
-> *number_of_agents* *radius_of_agents*\
-*description_of_path_for_agent_1*\
-*description_of_path_for_agent_2*\
+### Problem Instance
+> *description_of_environment* \
+*number_of_pairs* *radius_of_agents* \
+*start_1_x start_1_y goal_1_x goal_1_y* \
+*start_2_x start_2_y goal_2_x goal_2_y* \
 &#xFE19;
 
-Paths are described as follows:
-> *number_of_points*\
-*time_1*\
- *x_1* *y_1*\
-*time_2*\
- *x_2* *y_2*\
+### Plan
+> *cycle* *radius_of_agents* *period* *number_of_pairs* \
+*description_of_trajectory_for_pair_1_period_0*\
+*description_of_trajectory_for_pair_1_period_1*\
+&#xFE19; \
+*description_of_trajectory_for_pair_2_period_0*\
+*description_of_trajectory_for_pair_2_period_1*\
+&#xFE19; \
+&#xFE19;
+
+Trajectories are described as follows:
+> *number_of_way_points*\
+ *x_1* *y_1* *time_1*\
+ *x_2* *y_2* *time_2*\
 &#xFE19;
 
 ## License
