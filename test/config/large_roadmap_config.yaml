@@ -1,0 +1,14 @@
+Generator:
+  type: kPRM
+  number_of_vertices: 1000
+  number_of_neighbors: 15
+  seed: 43
+  seed: 2
+  seed: 
+  seed: 
+
+Input:
+  type: Text
+  file: env.txt
+  
+Output: large_roadmap.txt

@@ -1,0 +1,14 @@
+Problems:
+  Sample:
+    type: Explicit
+    file: in.txt
+    various_start_times: true
+    reached_agent_vanish: true
+Planners:
+  PSIPP:
+    type: PSIPP
+    skip_failure: true
+    time_limit: 1000000
+
+Output: out.txt
+checking_plan: false

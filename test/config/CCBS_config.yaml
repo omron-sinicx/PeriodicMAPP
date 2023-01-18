@@ -1,0 +1,16 @@
+Problems:
+  Sample:
+    type: Geometric
+    file: in.txt
+    various_start_times: true
+    reached_agent_vanish: true
+Planners:
+  CCBS:
+    type: OnlineCCBS
+    time_limit: 1.0
+    skip_failure: true
+    Output: out.txt
+    # focal_weight: 1000000000.0
+
+Output: ""
+checking_plan: false

@@ -1,0 +1,30 @@
+input: initial.txt
+output: optimized.txt
+
+number_of_way_points: 101
+
+target_period: 1.0
+target_agent_radius: 0.5
+period_cost: 1.
+agent_radius_cost: 10000.
+
+path_cost_method: default
+path_cost: 1.0
+collision_cost: 10000.
+
+max_velocity: 1.0
+max_velocity_cost: 10000.
+
+Environment: env.txt
+
+variable_delta: true
+
+number_of_iterations: [500, 39500, 1000]
+graph_update_interval: [1, 10, 1]
+until_converge: 1e-6
+
+increase_coefficients: true
+coefficient_growth_rate: 1.01
+
+
+uninitialize_lambda: true

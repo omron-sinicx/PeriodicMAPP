@@ -1,0 +1,32 @@
+input: input.txt
+output: output.txt
+
+period_cost: 10.
+
+Environment: ../instances/environments/no_block.txt
+
+eta: 100.
+
+number_of_way_points: 101
+
+learning_rate: 0.001
+learning_epsiron: 1e-2
+adam_beta_1: 0.9
+adam_beta_2: 0.9
+
+optimize_start_time: false
+
+iteration: 50000
+
+variable_delta: true
+span_cost_const: 0.0
+
+max_velocity: 1.0
+max_velocity_cost: 100.
+path_cost: 1.0
+
+collision_allowed: false
+
+variale_agent_radius: true
+agent_radius_cost_eta: 1000
+objective_agent_radius: 0.5
