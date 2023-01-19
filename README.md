@@ -1,6 +1,8 @@
 # Periodic Multi-Agent Path Planning
 
-Study of multi-agent path planning under the setting in which agents appear periodically.
+This is a repository for the following paper:
+- Kazumi Kasaura, Ryo Yonetani, and Mai Nishimura. 2023. “Periodic Multi-Agent Path Planning.” In <i>AAAI Conference on Artificial
+Intelligence</i>.
 
 ## Getting Started
 
@@ -44,6 +46,28 @@ If there is no argument, it read config from "../config/optimize_periodic_plan_g
 You can also use your configuration file as follows:
 <pre><code>./optimize_periodic_plan_g2o your_config.yaml</code></pre>
 ## Config Parameters
+
+These parameters can be set by config file for optimization.
+
+- `input`: The file path to input the initial plan.
+- `output`: The file path to output the optimized plan.
+- `Environment`: The file path to input the environment.
+- `number_of_way_points`: The number of way points, which is $K+1$ in our paper.
+- `target_agent_radius`: The target value $r$ of agent radius.
+- `max_velocity`: The upperbound $v_{\mathrm{max}}$ of velocity.
+- `target_period`: The target value of period, which is $\frac{2r}{v_{\mathrm{max}}}$ in our paper.
+- `path_cost_method`: If it is `default`, the term of squared sum of velocities are added to objective function. If it is `nothing`, this term is not added.
+- `path_cost`: The value of path cost coefficient $\sigma_{\mathrm{t}}$.
+- `agent_radius_cost`: The value of radius penalty coefficient $\sigma_{\mathrm{r}}$.
+- `max_velocity_cost`: The value of max valocity penalty coefficient $\sigma_{\mathrm{v}}$.
+- `collision_cost`: The value of obstacle penalty coefficient $\sigma_{\mathrm{o}}$ and collision penalty coefficient $\sigma_{\mathrm{c}}$.
+- `variable_delta`: If it is `true`, time durations $\Delta t$ are considered as variables and modified when optimization. Otherwise, they are fixed.
+- `number_of_iterations`: A sequence of numbers of iterations
+- `graph_update_intervals`: A sequence of periods of graph updations. The length of this sequences must be the same as that of `number_of_iterations`. First, optimizer runs with the first value of `number_of_iterations` as the number of iterations and the first value of `graph_update_intervals` as period of graph updations. Second, optimizer runs with the second values. And so on.
+- `until_converge`: If this parameter is specified, optimizer runs until the difference of objective values becomes less than its value.
+- `increase_coefficients`: If it is `true`, the penalty coefficients are multiplied when the last optimization steps corresponding the last value of `number_of_iterations`.
+- `coefficient_growth_rate`: The value multiplied to the penalty coefficients.
+- `uninitialized_lambda`: If it is `true`, the lambda value for Levenberg-Marquardt Algorithm is not reset when the graph is updated.
 
 ## File Formats
 ### Environment
