@@ -9,3 +9,5 @@ build
 !test/*/evaluation*.txt
 !test/*/optimized_*.txt
 !CMakeLists.txt
+!css.bundle.js.LICENSE.txt
+!index.bundle.js.LICENSE.txt
