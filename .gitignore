@@ -2,7 +2,6 @@ build
 *~
 *.txt
 *.mp4
-*.png
 *.xml
 !test/*/*.png
 !env.txt
