@@ -1,3 +1,8 @@
+/*
+Copyright (c) 2023 OMRON SINIC X Corporation
+Author: Kazumi Kasaura
+*/
+
 #include "compute_path_and_intersection.hpp"
 
 const double EPS = 1e-8, pi = 3.14159265359;

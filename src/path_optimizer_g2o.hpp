@@ -1,3 +1,8 @@
+/*
+Copyright (c) 2023 OMRON SINIC X Corporation
+Author: Kazumi Kasaura
+*/
+
 #include <g2o/core/base_binary_edge.h>
 #include <g2o/core/base_multi_edge.h>
 #include <g2o/core/base_unary_edge.h>

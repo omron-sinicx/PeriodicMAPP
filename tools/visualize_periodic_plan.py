@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# Copyright (c) 2023 OMRON SINIC X Corporation
+# Author: Kazumi Kasaura
+
 import matplotlib.pyplot as plt 
 import matplotlib.patches as patches
 import sys

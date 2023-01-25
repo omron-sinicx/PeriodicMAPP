@@ -1,3 +1,8 @@
+/*
+Copyright (c) 2023 OMRON SINIC X Corporation
+Author: Kazumi Kasaura
+*/
+
 #include "initial_periodic_planner.hpp"
 
 int main(int argc, char **argv) {

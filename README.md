@@ -6,6 +6,8 @@ Intelligence</i>.
 
 ## Getting Started
 
+You can use [Dockerfile](Dockerfile) to build an environment for this repository.
+
 This project uses C++17 standard library. Make sure your compiler support it.
 Some tools, such as visualizer, uses Python3 with numpy and matplotlib.
 
@@ -45,6 +47,13 @@ If there is no argument, it read config from "../config/optimize_periodic_plan_g
 <pre><code>./optimize_periodic_plan_g2o</code></pre>
 You can also use your configuration file as follows:
 <pre><code>./optimize_periodic_plan_g2o your_config.yaml</code></pre>
+
+### Visualization
+`tools/visualize_period_plan.py` is a script to visualize periodic plans.
+<pre><code>../tools/visualize_period_plan.py plan.txt <i>time_step</i></code></pre>
+where *time_step* is a value which means the time scale corresponding one frame in the animation.
+
+
 ## Config Parameters
 
 These parameters can be set by config file for optimization.

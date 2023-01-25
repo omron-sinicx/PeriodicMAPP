@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# Copyright (c) 2023 OMRON SINIC X Corporation
+# Author: Kazumi Kasaura
+
 import sys, copy
 import math
 with open(sys.argv[1], "r") as plan_file:

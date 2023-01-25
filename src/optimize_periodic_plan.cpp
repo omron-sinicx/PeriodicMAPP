@@ -1,3 +1,8 @@
+/*
+Copyright (c) 2023 OMRON SINIC X Corporation
+Author: Kazumi Kasaura
+*/
+
 #include <yaml-cpp/yaml.h>
 
 #include <cassert>

@@ -1,3 +1,8 @@
+/*
+Copyright (c) 2023 OMRON SINIC X Corporation
+Author: Kazumi Kasaura
+*/
+
 #ifndef MAPF_BENCHMARK_GEOMETRY
 #define MAPF_BENCHMARK_GEOMETRY
 

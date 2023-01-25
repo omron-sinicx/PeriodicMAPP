@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# Copyright (c) 2023 OMRON SINIC X Corporation
+# Author: Kazumi Kasaura
+
 import sys
 with open(sys.argv[1], "r") as problem_file:
     number_of_vertices, number_of_edges, number_of_agents = map(int,problem_file.readline().split())

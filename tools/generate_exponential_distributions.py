@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# Copyright (c) 2023 OMRON SINIC X Corporation
+# Author: Kazumi Kasaura
+
 import numpy.random
 import sys
 

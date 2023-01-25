@@ -1,3 +1,8 @@
+/*
+Copyright (c) 2023 OMRON SINIC X Corporation
+Author: Kazumi Kasaura
+*/
+
 #include "path_optimizer_g2o.hpp"
 
 int main(int argc, char **argv) {

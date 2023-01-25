@@ -1,3 +1,8 @@
+/*
+Copyright (c) 2023 OMRON SINIC X Corporation
+Author: Kazumi Kasaura
+*/
+
 template <class Geometry> class GeometricPath {
 public:
   using Point = typename Geometry::Point;
