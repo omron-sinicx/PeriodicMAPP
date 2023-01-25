@@ -123,7 +123,6 @@ Trajectories are described as follows:
 This software is released under the MIT License, see [LICENSE](LICENSE).
 
 ## Citation
-## Citation
 ```
 @article{kasaura2023periodic,
   title={Periodic Multi-Agent Path Planning},
