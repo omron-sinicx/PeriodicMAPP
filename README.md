@@ -1,6 +1,6 @@
 # Periodic Multi-Agent Path Planning
 
-This is a repository for the following paper:
+This is a repository for [the following paper](paper.pdf):
 - Kazumi Kasaura, Ryo Yonetani, and Mai Nishimura. 2023. “Periodic Multi-Agent Path Planning.” In <i>AAAI Conference on Artificial
 Intelligence</i>.
 
