@@ -1,6 +1,6 @@
 # Periodic Multi-Agent Path Planning
 
-This is a repository for [the following paper](paper.pdf):
+This is a repository for [the following paper](https://arxiv.org/abs/2301.10910):
 - Kazumi Kasaura, Ryo Yonetani, and Mai Nishimura. 2023. “Periodic Multi-Agent Path Planning.” In <i>AAAI Conference on Artificial
 Intelligence</i>.
 
@@ -123,6 +123,17 @@ Trajectories are described as follows:
 This software is released under the MIT License, see [LICENSE](LICENSE).
 
 ## Citation
+
+#### arXiv version
+```
+@article{kasaura2023periodic,
+  title={Periodic Multi-Agent Path Planning},
+  author={Kasaura, Kazumi and and Yonetani, Ryo Nishimura, Mai},
+  journal={arXiv preprint arXiv:2301.10910},
+  year={2023},
+}
+```
+#### AAAI version
 ```
 @article{kasaura2023periodic,
   title={Periodic Multi-Agent Path Planning},
