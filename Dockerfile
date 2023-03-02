@@ -71,7 +71,7 @@ RUN apt-get install -y libboost-dev=1.71.0.0ubuntu2
 # clear cache
 RUN rm -rf /var/lib/apt/lists/*
 
-# build PSIPP-CTC
+# build PeriodicMAPP
 COPY src/ src/
 COPY config/ config/
 COPY CMakeLists.txt .
