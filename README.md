@@ -128,7 +128,7 @@ This software is released under the MIT License, see [LICENSE](LICENSE).
 ```
 @article{kasaura2023periodic,
   title={Periodic Multi-Agent Path Planning},
-  author={Kasaura, Kazumi and and Yonetani, Ryo Nishimura, Mai},
+  author={Kasaura, Kazumi and Yonetani, Ryo and Nishimura, Mai},
   journal={arXiv preprint arXiv:2301.10910},
   year={2023},
 }
@@ -137,7 +137,7 @@ This software is released under the MIT License, see [LICENSE](LICENSE).
 ```
 @article{kasaura2023periodic,
   title={Periodic Multi-Agent Path Planning},
-  author={Kasaura, Kazumi and and Yonetani, Ryo Nishimura, Mai},
+  author={Kasaura, Kazumi, and Yonetani, Ryo and Nishimura, Mai},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2023},
 }
